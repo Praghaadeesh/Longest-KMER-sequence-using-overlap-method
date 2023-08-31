@@ -20,10 +20,10 @@ def kmer_finder(seq,k):
   return(kmer)
 
 seqfi=[]
-roll_list=[1]
+roll_list=[1]                         ## Starting index , input a list of different numbers to find kmers for different start positions
 for roll in roll_list:
   print('For first 15 neucleotides,')
-  s=seq1[roll:roll+15]
+  s=seq1[roll:roll+15]                ## Chnage the length of sequence by adjusting this line
   print('The sequence is :',s)
   seqf=kmer_finder(s,3)
   seqfi=[]
